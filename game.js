@@ -5,7 +5,7 @@ alert("Hello! Welcome to my page " + userName + "!" );
 var cityBorn = prompt("Was I born in Vancouver?");
 var counter = 0;
 console.log("User input for cityBorn: " + cityBorn);
-if (cityBorn.toUpperCase() === "NO") {
+if (cityBorn.toUpperCase() === "NO" || cityBorn.toUpperCase() === "N") {
   alert("That's right, " + userName + "! I was born in Seattle!");
   counter++;
 } else {
@@ -14,7 +14,7 @@ if (cityBorn.toUpperCase() === "NO") {
 
 var catOwner = prompt("Do I have a cat?");
 console.log("User input for catOwner: " + catOwner);
-if (catOwner.toUpperCase() === "YES") {
+if (catOwner.toUpperCase() === "YES" || catOwner.toUpperCase() === "Y") {
   alert("That's right, " + userName + "!");
   counter++;
 } else {
@@ -23,7 +23,7 @@ if (catOwner.toUpperCase() === "YES") {
 
 var hairColor = prompt("Is my hair dark?");
 console.log("User input for hairColor: " + hairColor);
-if (hairColor.toUpperCase() === "YES") {
+if (hairColor.toUpperCase() === "YES" || catOwner.toUpperCase() === "Y") {
   alert("Yay, " + userName + "! You got it right!");
   counter++;
 } else {
