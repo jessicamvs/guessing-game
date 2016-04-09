@@ -42,3 +42,8 @@ if (age === 26) {
 }
 
 alert("You got " + counter + " out of 4 answers correct!");
+
+var num = parseInt(prompt("Guess my number."));
+while (num !== 7) {
+  num = parseInt(prompt("Guess my number again."));
+}
