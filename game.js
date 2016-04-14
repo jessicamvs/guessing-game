@@ -8,7 +8,8 @@ var questions = [
   "Was I born in Vancouver?",
   "Do I have a cat?",
   "Is my hair dark?",
-  "Guess my number.",
+  "How old am I?",
+  // "Guess my number.",
 ];
 
 var correctAn = [
@@ -39,6 +40,7 @@ var el = [
   document.getElementById('one'),
   document.getElementById('two'),
   document.getElementById('three'),
+  document.getElementById('four'),
 ];
 
 function game(questions, answers, wrongAns, correctAn){
@@ -52,12 +54,46 @@ function game(questions, answers, wrongAns, correctAn){
       el[i].textContent = wrongAns;
     }
   } else {
-    // var num = parseInt(prompt("Guess my number."));
-    while (userInput !== 7) {
-      userInput = parseInt(prompt("Guess my number again."));
+    if (parseInt(userInput) === 26) {
+      el[i].textContent = ("You guessed, right, " + userName + "!");
+      counter++;
+    } else if (userInput < 26) {
+      el[i].textContent = ("That guess is too low.");
+    } else {
+      el[i].textContent = ("That guess is too high.");
     }
+    // var num = parseInt(prompt("Guess my number."));
+    // while (userInput !== 7) {
+    //   userInput = parseInt(prompt("Guess my number again."));
+    // }
   }
 }
+
+// var age = parseInt(prompt("How old am I?"));
+// console.log("User input for age: " + age);
+// if (age === 26) {
+//   alert("You guessed, right, " + userName + "!");
+//   counter++;
+// } else if (age < 26) {
+//   alert("That guess is too low.");
+// } else {
+//   alert("That guess is too high.");
+// }
+//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // else if (parseInt(userInput) !== 'string') {
 //   while (userInput !== 7) {
 //     userInput = parseInt(prompt("Guess my number again."));
