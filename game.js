@@ -32,20 +32,21 @@ var el = [
 ];
 
 function game(questions, answers, wrongAn, correctAn){
-  var userInput = parseInt(prompt(questions).toUpperCase());
+  var userInput = (prompt(questions).toUpperCase());
   console.log(userInput);
   if (userInput === answers) {
     counter++;
     el[i].textContent = correctAn;
-  } else if (parseInt(userInput) !== 'string') {
-    while (userInput !== 7) {
-      userInput = parseInt(prompt("Guess my number again."));
-    }
   } else {
     el[i].textContent = wrongAn;
   }
 }
 
+
+// else if (parseInt(userInput) !== 'string') {
+//   while (userInput !== 7) {
+//     userInput = parseInt(prompt("Guess my number again."));
+//   }
 
 for (i = 0; i < questions.length; i++){
   game(questions[i],answers[i], wrongAn[i], correctAn[i], el[i]);
