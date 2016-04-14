@@ -33,7 +33,9 @@ function game(questions, answers, wrongAn, correctAn){
   }
 }
 
-game(questions[0],answers[0], wrongAn[0], correctAn[0]);
+for (i = 0; i < questions.length; i++){
+  game(questions[i],answers[i], wrongAn[i], correctAn[i]);
+}
 
 // var cityBorn = prompt("Was I born in Vancouver?");
 // var counter = 0;
