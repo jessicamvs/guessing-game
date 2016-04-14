@@ -24,7 +24,6 @@ var answers = [
   "NO",
   "YES",
   "YES",
-  7,
 ];
 var el = [
   document.getElementById('one'),
@@ -33,18 +32,16 @@ var el = [
 ];
 
 function game(questions, answers, wrongAn, correctAn){
-  var userInput = prompt(questions).toUpperCase();
-  console.log(typeof userInput);
+  var userInput = parseInt(prompt(questions).toUpperCase());
+  console.log(userInput);
   if (userInput === answers) {
     counter++;
-    console.log(typeof userInput);
     el[i].textContent = correctAn;
   } else if (parseInt(userInput) !== 'string') {
-    console.log(userInput);
-  } else {
-    while (num !== 7) {
-      num = parseInt(prompt("Guess my number again."))
+    while (userInput !== 7) {
+      userInput = parseInt(prompt("Guess my number again."));
     }
+  } else {
     el[i].textContent = wrongAn;
   }
 }
@@ -58,4 +55,24 @@ score.textContent = ("You got " + counter + " out of 4 answers correct!");
 // var num = parseInt(prompt("Guess my number."));
 // while (num !== 7) {
 //   num = parseInt(prompt("Guess my number again."));
+// }
+
+
+
+
+// function game(questions, answers, wrongAn, correctAn){
+//   var userInput = prompt(questions).toUpperCase();
+//   console.log(typeof userInput);
+//   if (userInput === answers) {
+//     counter++;
+//     console.log(typeof userInput);
+//     el[i].textContent = correctAn;
+//   } else if (parseInt(userInput) !== 'string') {
+//     console.log(userInput);
+//   } else {
+//     while (num !== 7) {
+//       num = parseInt(prompt("Guess my number again."))
+//     }
+//     el[i].textContent = wrongAn;
+//   }
 // }
