@@ -9,7 +9,7 @@ var questions = [
   "Do I have a cat?",
   "Is my hair dark?",
   "How old am I?",
-  // "Guess my number.",
+  "Guess my number.",
 ];
 
 var correctAn = [
@@ -28,6 +28,7 @@ var answers = [
   "NO",
   "YES",
   "YES",
+  26,
 ];
 
 var wrongAnswers = [
@@ -53,8 +54,8 @@ function game(questions, answers, wrongAns, correctAn){
     } else {
       el[i].textContent = wrongAns;
     }
-  } else {
-    if (parseInt(userInput) === 26) {
+  } else if (answers === 26) {
+    if (parseInt(userInput) === answers) {
       el[i].textContent = ("You guessed, right, " + userName + "!");
       counter++;
     } else if (userInput < 26) {
@@ -66,6 +67,11 @@ function game(questions, answers, wrongAns, correctAn){
     // while (userInput !== 7) {
     //   userInput = parseInt(prompt("Guess my number again."));
     // }
+  } else {
+    while (parseInt(userInput) !== 7) {
+      console.log(userInput);
+      userInput = parseInt(prompt("Guess my number again."));
+    }
   }
 }
 
