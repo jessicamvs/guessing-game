@@ -2,6 +2,21 @@ var userName = prompt("What is your name?");
 console.log("User input for userName: " + userName);
 alert("Hello! Welcome to my page " + userName + "!" );
 
+var questions = [
+  "Was I born in Vancouver?",
+  "Do I have a cat?",
+  "Is my hair dark?",
+];
+var correctAn = [
+  "That's right, " + userName + "! I was born in Seattle!",
+  "That's right, " + userName + "!",
+  "Yay, " + userName + "! You got it right!",
+];
+var wrongAn = ["I wasn't born in Vancouver, " + userName + ". I was born in Seattle!",
+"Ooops! I do have a cat, " + userName + ".",
+"Sorry, wrong answer. I am not blonde, " + userName + "!",
+];
+
 var cityBorn = prompt("Was I born in Vancouver?");
 var counter = 0;
 console.log("User input for cityBorn: " + cityBorn);
