@@ -2,7 +2,7 @@
 
 ###Author
 
-[Jessica Vasquez-Soltero]()
+Jessica Vasquez-Soltero
 
 ###Contributer
 
