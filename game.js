@@ -38,7 +38,7 @@ function game(questions, answers, wrongAns, correctAn) {
   var userInput = (prompt(questions).toUpperCase());
   if (isNaN(parseInt(userInput))) {
     console.log(userInput);
-    if (userInput === answers) {
+    if ((userInput === answers) || (userInput === answers.substr(0,1))) {
       counter++;
       el[i].textContent = correctAn;
     } else {
