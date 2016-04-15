@@ -22,16 +22,18 @@ var answers = [
   "YES",
   26,
 ];
-var wrongAnswers = [
-  "YES",
-  "NO",
-  "NO",
+var holiday = [
+  "HALLOWEEN",
+  "CHRISTMAS",
+  "THANKSGIVING",
 ];
+
 var el = [
   document.getElementById('one'),
   document.getElementById('two'),
   document.getElementById('three'),
   document.getElementById('four'),
+  document.getElementById('five'),
 ];
 
 function game(questions, answers, wrongAns, correctAn) {
@@ -63,10 +65,21 @@ function game(questions, answers, wrongAns, correctAn) {
 
 var userName = prompt("What is your name?");
 console.log("User input for userName: " + userName);
-alert("Hello! Welcome to my page " + userName + "!" );
 
 for (i = 0; i < questions.length; i++) {
   game(questions[i],answers[i], wrongAns[i], correctAn[i], el[i]);
 }
 
-score.textContent = ("You got " + counter + " out of 4 answers correct!");
+var favDay = prompt("What is one of my favorite holidays?").toUpperCase();
+for(i = 0; i < holiday.length; i++) {
+  if (favDay === holiday[i]) {
+    el[4].textContent = favDay.substr(0, 1) + favDay.substr(1).toLowerCase() + " is one of my favorite holidays.";
+    counter++;
+    break;
+  } else {
+    el[4].textContent = favDay.substr(0, 1) + favDay.substr(1).toLowerCase() + " is not one of my favorite holidays.";
+  }
+}
+
+
+score.textContent = ("You got " + counter + " out of 5 answers correct!");
