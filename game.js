@@ -75,7 +75,7 @@
   for(var j = 0; j < holiday.length; j++) {
     if (favDay === holiday[j]) {
       el[4].textContent = favDay.substr(0, 1) + favDay.substr(1).toLowerCase() + " is one of my favorite holidays.";
-      counter++;
+        counter++;
       break;
     } else {
       el[4].textContent = favDay.substr(0, 1) + favDay.substr(1).toLowerCase() + " is not one of my favorite holidays.";

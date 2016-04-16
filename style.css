@@ -1,18 +1,25 @@
 body {
   background-color: #e3f9fc;
-  text-align: justify;
 }
 
 header {
   background-color: blue;
+  height: 300px;
+  text-align: center;
+  font-size: 70px;
 }
 
 section {
   background-color: yellow;
+  height: 500px;
+  width: 1500px;
+  text-align: center;
+  transform:translateX(150px);
+  font-size: 50px;
 }
 
 h1 {
-
+  transform: translateY(80px);
 }
 
 h2 {
@@ -21,4 +28,16 @@ h2 {
 
 ul {
 
+}
+
+.secBio {
+}
+
+.secExp {
+}
+
+.secEd {
+}
+
+.secGol {
 }
