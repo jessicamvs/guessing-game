@@ -7,22 +7,25 @@ header {
   height: 300px;
   text-align: center;
   font-size: 70px;
+  border-radius: 30px;
 }
 
 footer {
   font-size: 30px;
   display: inline;
   text-align: center;
-  width: 100%;
 }
 
 section {
   background-color: #91B4CF;
   height: 500px;
-  width: 1500px;
+  width: 1600px;
   text-align: center;
-  transform:translateX(150px);
-  font-size: 50px;
+  transform:translateX(122.5px);
+  font-size: 45px;
+  font-family: 'Cousine', 'Cursive';
+  line-height: 90px;
+  border-radius: 60px;
 }
 
 h1 {
@@ -30,7 +33,7 @@ h1 {
 }
 
 h2 {
-
+  transform: translateY(35px);
 }
 
 ul {
@@ -51,4 +54,17 @@ list-style: none;
 
 .secQues {
   height: 30%;
+}
+
+.ulQues {
+  text-decoration: underline;
+}
+
+.ulQues>.liAn {
+  font-size: 40px;
+  text-decoration: none;
+}
+
+#one, #two, #three, #four, #five {
+  text-decoration: underline;
 }
