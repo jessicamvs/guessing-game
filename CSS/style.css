@@ -1,9 +1,10 @@
 body {
-  background-color: #F3F6E0;
+  background-color:  #91B4CF;
+  /*#F3F6E0;*/
 }
 
 header {
-  background-color: #91B4CF;
+  background-color: #B8E0F1;
   height: 300px;
   text-align: center;
   font-size: 70px;
@@ -57,14 +58,8 @@ list-style: none;
 }
 
 .ulQues {
-  text-decoration: underline;
 }
 
-.ulQues>.liAn {
+.liAn {
   font-size: 40px;
-  text-decoration: none;
-}
-
-#one, #two, #three, #four, #five {
-  text-decoration: underline;
 }
