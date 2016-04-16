@@ -82,6 +82,5 @@
     }
   }
 
-
   score.textContent = ("You got " + counter + " out of 5 answers correct!");
 })()
