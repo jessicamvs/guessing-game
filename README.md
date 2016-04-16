@@ -18,3 +18,5 @@ https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/isNaN
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/substr
 http://www.hexcolortool.com/
+https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translateX
+http://www.pantone.com/color-finder
