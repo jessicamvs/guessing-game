@@ -1,0 +1,65 @@
+body {
+  background-color:  #91B4CF;
+  /*#F3F6E0;*/
+}
+
+header {
+  background-color: #B8E0F1;
+  height: 300px;
+  text-align: center;
+  font-size: 70px;
+  border-radius: 30px;
+}
+
+footer {
+  font-size: 30px;
+  display: inline;
+  text-align: center;
+}
+
+section {
+  background-color: #91B4CF;
+  height: 500px;
+  width: 1600px;
+  text-align: center;
+  transform:translateX(122.5px);
+  font-size: 45px;
+  font-family: 'Cousine', 'Cursive';
+  line-height: 90px;
+  border-radius: 60px;
+}
+
+h1 {
+  transform: translateY(80px);
+}
+
+h2 {
+  transform: translateY(35px);
+}
+
+ul {
+list-style: none;
+}
+
+.secBio {
+}
+
+.secExp {
+}
+
+.secEd {
+}
+
+.secGol {
+}
+
+.secQues {
+  height: 30%;
+}
+
+.ulQues {
+}
+
+.liAn {
+  font-size: 40px;
+}
