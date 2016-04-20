@@ -42,19 +42,24 @@
     if (isNaN(parseInt(userInput))) {
       console.log(userInput);
       if ((userInput === answer) || (userInput === answer.substr(0,1))) {
-        counter++;
         el[i].textContent = correctA;
+        el[i].className = "correct";
+        counter++;
       } else {
         el[i].textContent = wrongA;
+        el[i].className = "incorrect";
       }
     } else if (answer === 26) {
       if (parseInt(userInput) === answer) {
         el[i].textContent = ("You guessed, right, " + userName + "!");
+        el[i].className = "correct";
         counter++;
       } else if (userInput < 26) {
         el[i].textContent = ("That guess is too low.");
+        el[i].className = "incorrect";
       } else {
         el[i].textContent = ("That guess is too high.");
+        el[i].className = "incorrect";
       }
     } else {
       while (parseInt(userInput) !== 7) {
@@ -75,10 +80,12 @@
   for(var j = 0; j < holiday.length; j++) {
     if (favDay === holiday[j]) {
       el[4].textContent = favDay.substr(0, 1) + favDay.substr(1).toLowerCase() + " is one of my favorite holidays.";
-        counter++;
+      el[i].className = "correct";
+      counter++;
       break;
     } else {
       el[4].textContent = favDay.substr(0, 1) + favDay.substr(1).toLowerCase() + " is not one of my favorite holidays.";
+      el[4].className = "incorrect";
     }
   }
 
