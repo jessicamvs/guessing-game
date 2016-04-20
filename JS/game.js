@@ -43,6 +43,7 @@
       console.log(userInput);
       if ((userInput === answer) || (userInput === answer.substr(0,1))) {
         el[i].textContent = correctA;
+        el[i].innerHTML = '<img src="images/ikaika.jpg">';
         el[i].className = "correct";
         counter++;
       } else {
@@ -52,6 +53,7 @@
     } else if (answer === 26) {
       if (parseInt(userInput) === answer) {
         el[i].textContent = ("You guessed, right, " + userName + "!");
+        el[i].innerHTML = '<img src="images/ikaika.jpg">';
         el[i].className = "correct";
         counter++;
       } else if (userInput < 26) {
@@ -80,7 +82,7 @@
   for(var j = 0; j < holiday.length; j++) {
     if (favDay === holiday[j]) {
       el[4].textContent = favDay.substr(0, 1) + favDay.substr(1).toLowerCase() + " is one of my favorite holidays.";
-      el[i].className = "correct";
+      el[4].className = "correct";
       counter++;
       break;
     } else {
