@@ -1,65 +1,49 @@
 body {
-  background-color:  #91B4CF;
-  /*#F3F6E0;*/
+  font-family: 'Josefin Sans';
 }
 
 header {
-  background-color: #B8E0F1;
-  height: 300px;
+  background-color: hsla(171, 35%, 82%, 0.85);
+  width: auto;
+  border-radius: 50px;
   text-align: center;
-  font-size: 70px;
-  border-radius: 30px;
+  height: 90px;
+  line-height: 90px;
 }
 
-footer {
-  font-size: 30px;
-  display: inline;
-  text-align: center;
+.info {
+  display: inline-block;
+  width: 30%;
 }
 
 section {
-  background-color: #91B4CF;
-  height: 500px;
-  width: 1600px;
-  text-align: center;
-  transform:translateX(122.5px);
-  font-size: 45px;
-  font-family: 'Cousine', 'Cursive';
-  line-height: 90px;
-  border-radius: 60px;
+  background-color: #FFCCAC;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 10px;
 }
 
-h1 {
-  transform: translateY(80px);
+img {
+  width: 200px;
+  height: 200px;
 }
 
-h2 {
-  transform: translateY(35px);
+.correct {
+ color: green;
 }
 
-ul {
-list-style: none;
-}
-
-.secBio {
-}
-
-.secExp {
-}
-
-.secEd {
-}
-
-.secGol {
-}
-
-.secQues {
-  height: 30%;
+.incorrect {
+ color: red;
 }
 
 .ulQues {
+  width: 25%;
 }
 
-.liAn {
-  font-size: 40px;
+footer {
+  background-color: #FFEB94;
+}
+
+footer div {
+  display: inline-block;
 }
