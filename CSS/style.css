@@ -1,5 +1,9 @@
+body {
+  font-family: 'Josefin Sans';
+}
+
 header {
-  background-color: #C1E1DC;
+  background-color: hsla(171, 35%, 82%, 0.85);
   width: auto;
   border-radius: 50px;
   text-align: center;
@@ -33,7 +37,7 @@ img {
 }
 
 .ulQues {
-  width: 30%;
+  width: 25%;
 }
 
 footer {
