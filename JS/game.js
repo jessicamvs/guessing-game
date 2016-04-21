@@ -1,4 +1,7 @@
-(function(){
+// (function(){
+  var userName = prompt("What is your name?");
+  console.log("User input for userName: " + userName);
+
   var counter = 0;
   var questions = [
     "Was I born in Vancouver?",
@@ -43,7 +46,7 @@
       console.log(userInput);
       if ((userInput === answer) || (userInput === answer.substr(0,1))) {
         el[i].textContent = correctA;
-        el[i].innerHTML = '<img src="images/ikaika.jpg">';
+        el[i].innerHTML += '<img src="images/ikaika.jpg">';
         el[i].className = "correct";
         counter++;
       } else {
@@ -53,7 +56,7 @@
     } else if (answer === 26) {
       if (parseInt(userInput) === answer) {
         el[i].textContent = ("You guessed, right, " + userName + "!");
-        el[i].innerHTML = '<img src="images/ikaika.jpg">';
+        el[i].innerHTML += '<img src="images/ikaika.jpg">';
         el[i].className = "correct";
         counter++;
       } else if (userInput < 26) {
@@ -68,11 +71,9 @@
         console.log(userInput);
         userInput = parseInt(prompt("Guess my number again."));
       }
+      el[i].innerHTML += '<img src="images/ikaika.jpg">';
     }
   }
-
-  var userName = prompt("What is your name?");
-  console.log("User input for userName: " + userName);
 
   for (var i = 0; i < questions.length; i++) {
     game(questions[i],answers[i], wrongAns[i], correctAn[i], el[i]);
@@ -83,6 +84,7 @@
     if (favDay === holiday[j]) {
       el[4].textContent = favDay.substr(0, 1) + favDay.substr(1).toLowerCase() + " is one of my favorite holidays.";
       el[4].className = "correct";
+      el[4].innerHTML += '<img src="images/ikaika.jpg">';
       counter++;
       break;
     } else {
@@ -92,4 +94,4 @@
   }
 
   score.textContent = ("You got " + counter + " out of 5 answers correct!");
-})()
+// })()
